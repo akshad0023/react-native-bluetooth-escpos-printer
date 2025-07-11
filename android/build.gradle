@@ -20,6 +20,7 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
+    namespace "com.reactnativebluetoothescposprinter"
     compileSdkVersion 34
 
     defaultConfig {
@@ -28,9 +29,11 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
     lintOptions {
         abortOnError false
     }
+
     sourceSets {
         main {
             aidl.srcDirs = ['src/main/java']
